@@ -3,9 +3,9 @@ let playBtn = document.querySelector("#playBtn");
 let userInput = document.querySelector("#userInput");
 let result = document.querySelector("#result")
 let resetBtn = document.querySelector("#resetBtn");
-let chance = 5
+let chance = 5;
 let chanceArea = document.querySelector("#chanceArea");  
-let history = []
+let history = [];
 
 function pickRandomNum(){
     computerNum = Math.floor( (Math.random()*100)+1 );
@@ -47,6 +47,7 @@ function reset(){
     userInput.value = ""
     playBtn.disabled = false;
     history = []
+    chance = 5
     pickRandomNum();
     result.textContent = "결과 : "
 }
