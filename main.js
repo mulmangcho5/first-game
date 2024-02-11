@@ -50,6 +50,7 @@ function reset(){
     chance = 5
     pickRandomNum();
     result.textContent = "결과 : "
+    chanceArea.textContent = `남은 기회 : ${chance}`
 }
 
 pickRandomNum();
